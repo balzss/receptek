@@ -1,0 +1,14 @@
+{{ define "main" }}
+<section class="recipe-section">
+  <div class="recipe-card-tags" style="margin: 16px 0;">
+    {{ range .Site.Taxonomies.tags }}
+    <a class="recipe-tag" href="{{ .Page.Permalink }}">{{ .Page.Title }}</a>
+    {{ end }}
+  </div>
+  <div class="recipe-grid">
+    {{ range $page := .Site.RegularPages }}
+      {{ partial "box.html" $page }}
+    {{ end }}
+  </div>
+</section>
+{{ end }}

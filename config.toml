@@ -1,0 +1,7 @@
+baseURL = "https://receptek.balzss.github.io/"
+languageCode = "hu-hu"
+title = "Receptek"
+theme = "recipes"
+
+[params]
+  author = "Balazs Saros"

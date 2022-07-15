@@ -1,0 +1,11 @@
+{{ define "main" }}.
+<section class="recipe-section">
+  <h3 class="title">{{ humanize .Page.Title }}</h3>
+
+  <div class="recipe-grid">
+    {{ range $page := .Pages }}
+      {{ partial "box.html" $page }}
+    {{ end }}
+  </div>
+</section>
+{{ end }}

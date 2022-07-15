@@ -1,0 +1,19 @@
+{{ define "main" }}
+<div class="section">
+  <article class="container">
+    <header>
+      <h1 class="title is-1">
+        {{ .Title }}
+      </h1>
+      <div class="recipe-card-tags" style="margin-top: 1em;">
+        {{ range .Params.Tags }}
+        <a class="recipe-tag" href="/tags/{{ . }}">{{ . }}</a>
+        {{ end }}
+      </div>
+    </header>
+    <div class="content" style="margin-top: 1em;">
+      {{ .Content }}
+    </div>
+  </article>
+</div>
+{{ end }}

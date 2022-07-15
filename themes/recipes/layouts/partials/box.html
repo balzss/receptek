@@ -1,0 +1,8 @@
+<a class="recipe-box" href="{{ .Permalink }}" aria-label="{{ .Title }}">
+  <div class="recipe-title">{{ .Title }}</div>
+  <div class="recipe-card-tags">
+    {{ range .Params.Tags }}
+    <span class="recipe-tag">{{ . }}</span>
+    {{ end }}
+  </div>
+</a>
