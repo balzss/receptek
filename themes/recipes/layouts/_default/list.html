@@ -1,5 +1,7 @@
 {{ define "main" }}
-<section class="recipe-section">
+{{- partial "navbar.html" . -}}
+
+<section class="recipe-section appview-only">
   <h3 class="recipe-title">{{ humanize .Page.Title }}</h3>
 
   <div class="recipe-grid">

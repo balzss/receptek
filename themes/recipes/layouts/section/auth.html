@@ -1,0 +1,28 @@
+{{ define "main" }}
+<section class="recipe-section">
+  <button id="appview-switch" class="recipe-button" onclick="appViewSwitch()"></button>
+</section>
+
+<script>
+const initButton = document.getElementById('appview-switch');
+
+if (!localStorage.getItem('recipeAppView')) {
+  initButton.innerText = 'Alkalmazás nézet bekapcsolása az eszközön';
+} else {
+  initButton.innerText = 'Alkalmazás nézet kikapcsolása az eszközön';
+}
+
+function appViewSwitch() {
+  const appView = localStorage.getItem('recipeAppView');
+  const switchButton = document.getElementById('appview-switch');
+
+  if (!appView) {
+    localStorage.setItem('recipeAppView', 'true');
+    document.getElementById('appview-switch').innerText = 'Alkalmazás nézet kikapcsolása az eszközön';
+  } else {
+    localStorage.removeItem('recipeAppView');
+    switchButton.innerText = 'Alkalmazás nézet bekapcsolása az eszközön';
+  }
+}
+</script>
+{{ end }}

@@ -1,4 +1,7 @@
 {{ define "main" }}
+
+{{- partial "searchbar.html" . -}}
+
 <section class="recipe-section">
   <div class="recipe-grid">
     {{ range $page := .Site.RegularPages }}
@@ -6,4 +9,6 @@
     {{ end }}
   </div>
 </section>
+
+<script src="{{ .Site.BaseURL }}/js/search.js"></script>
 {{ end }}

@@ -1,5 +1,8 @@
 {{ define "main" }}
-<section class="recipe-section">
+
+{{- partial "navbar.html" . -}}
+
+<section class="recipe-section appview-only">
   <div class="recipe-card-tags" style="margin-bottom: 24px;">
     {{ range .Site.Taxonomies.tags }}
     <a class="recipe-tag" href="{{ .Page.Permalink }}">{{ .Page.Title }}</a>

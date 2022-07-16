@@ -3,18 +3,13 @@
 {{- partial "head.html" . -}}
 
   <body>
-    {{ if ( eq .Permalink ( add .Site.BaseURL "search/" ) ) }}
-      {{- partial "searchbar.html" . -}}
-    {{ else }}
-      {{- partial "navbar.html" . -}}
-    {{ end }}
-    <main role="main">
-      {{- block "main" . }}{{- end }}
-    </main>
-    {{- partial "footer.html" . -}}
-
-    {{ if ( eq .Permalink ( add .Site.BaseURL "search/" ) ) }}
-      <script src="{{ .Site.BaseURL }}/js/search.js"></script>
-    {{ end }}
+    {{- block "main" . }}{{- end }}
+    <script>
+      if (localStorage.getItem('recipeAppView')) {
+        document.querySelectorAll('.appview-only').forEach((node) => {
+          node.classList.remove('appview-only');
+        });
+      }
+    </script>
   </body>
 </html>
