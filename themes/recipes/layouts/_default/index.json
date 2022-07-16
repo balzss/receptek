@@ -1,0 +1,11 @@
+{{- $.Scratch.Add "index" slice -}}
+{{- range .Site.RegularPages -}}
+    {{- $.Scratch.Add "index"
+      (dict
+        "title" .Title
+        "tags" .Params.tags
+        "ingredients" ( trim (index (findRE "<ul.*?>(.|\n)*?</ul>" .Content ) 0 | plainify ) " " )
+        "permalink" .Permalink)
+    -}}
+{{- end -}}
+{{- $.Scratch.Get "index" | jsonify -}}
