@@ -5,6 +5,7 @@ theme = "recipes"
 
 [params]
   author = "Balazs Saros"
+  githubEditUrl= "https://github.com/balzss/static-recipes/edit/master/content/"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
