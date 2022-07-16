@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&family=Roboto:wght@300;400;500&display=swap');
 
 html {
   height: 100%;
@@ -88,4 +88,23 @@ body {
 
 .recipe-title {
   margin-top: 0;
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-family: 'Roboto Slab', serif;
+}
+
+.content h2 {
+  font-weight: 400;
+  font-family: 'Roboto Slab', serif;
+  margin: 16px 0 0 0;
+}
+
+.content {
+  line-height: 1.5;
+}
+
+.content ul, .content ol {
+  margin: 8px 0 16px 0;
+  font-weight: 300;
+  letter-spacing: 0.25px;
 }
