@@ -19,4 +19,4 @@ tags: ["tészta"]
 3. Egy tálban összekeverem a tojást és a parmezánt, hogy homogén masszát kapjak
 4. Miután lefőtt a tészta, kb egy deci vizet félrerakok belőle majd leszűrve a szalonnához szedem
 5. A tűzhelyet alacsony fokozatra kapcsolom és hozzákeverem a tojásos parmezános masszát
-6. Folyamatos keveréssel, egy kis tésztavíz hozzáadásával megfelelő állagúra főzőm, majd forrón tálalom
+6. Folyamatos keveréssel, egy kis tésztavíz hozzáadásával megfelelő állagúra főzőm, forrón tálalom
