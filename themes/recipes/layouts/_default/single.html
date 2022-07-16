@@ -37,7 +37,7 @@ document.addEventListener('copy', (event) => {
   copyButton.innerText = 'Link másolása';
 });
 function copyAction() {
-  navigator.clipboard.writeText({{$.Site.BaseURL}}).then(copyButton.innerText='Vágólapra másolva');
+  navigator.clipboard.writeText({{.Permalink}}).then(copyButton.innerText='Vágólapra másolva');
 }
 </script>
 {{ end }}
