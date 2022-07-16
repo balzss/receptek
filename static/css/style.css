@@ -80,7 +80,7 @@ body {
   padding: 0 16px;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .recipe-nav a {
@@ -112,6 +112,15 @@ body {
   letter-spacing: 0.25px;
 }
 
-.search-icon svg {
+.recipe-nav .search-icon svg {
   fill: #E6E1E5;
+}
+
+.recipe-nav .recipe-home-button {
+  margin-right: auto;
+}
+
+.recipe-nav input {
+  margin: 16px;
+  margin-right: auto;
 }

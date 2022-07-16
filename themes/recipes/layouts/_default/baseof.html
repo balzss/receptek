@@ -3,7 +3,11 @@
 {{- partial "head.html" . -}}
 
 <body>
-    {{- partial "header.html" . -}}
+    {{ if ( eq .Permalink ( add .Site.BaseURL "search/" ) ) }}
+      {{- partial "searchbar.html" . -}}
+    {{ else }}
+      {{- partial "navbar.html" . -}}
+    {{ end }}
     <main role="main">
         {{- block "main" . }}{{- end }}
     </main>
