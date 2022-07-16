@@ -1,6 +1,6 @@
 {{ define "main" }}
 <section class="recipe-section">
-  <div class="recipe-card-tags" style="margin: 16px 0;">
+  <div class="recipe-card-tags" style="margin-bottom: 24px;">
     {{ range .Site.Taxonomies.tags }}
     <a class="recipe-tag" href="{{ .Page.Permalink }}">{{ .Page.Title }}</a>
     {{ end }}

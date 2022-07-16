@@ -1,6 +1,6 @@
-{{ define "main" }}.
+{{ define "main" }}
 <section class="recipe-section">
-  <h3 class="title">{{ humanize .Page.Title }}</h3>
+  <h3 class="recipe-title">{{ humanize .Page.Title }}</h3>
 
   <div class="recipe-grid">
     {{ range $page := .Pages }}

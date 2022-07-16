@@ -1,19 +1,17 @@
 {{ define "main" }}
-<div class="section">
-  <article class="container">
+<div class="recipe-section">
     <header>
-      <h1 class="title is-1">
+      <h1 class="recipe-title">
         {{ .Title }}
       </h1>
       <div class="recipe-card-tags" style="margin-top: 1em;">
         {{ range .Params.Tags }}
-        <a class="recipe-tag" href="/tags/{{ . }}">{{ . }}</a>
+        <a class="recipe-tag" href="{{ $.Site.BaseURL }}/tags/{{ . }}">{{ . }}</a>
         {{ end }}
       </div>
     </header>
     <div class="content" style="margin-top: 1em;">
       {{ .Content }}
     </div>
-  </article>
 </div>
 {{ end }}

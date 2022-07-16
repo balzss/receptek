@@ -1,6 +1,6 @@
 ---
 title: "Carbonara"
-tags: ["tészta", "finom"]
+tags: ["tészta"]
 ---
 
 1 főre
