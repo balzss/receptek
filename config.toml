@@ -1,4 +1,4 @@
-baseURL = "https://balzss.github.io/konyha"
+baseURL = "https://balzss.github.io/static-recipes/"
 languageCode = "hu-hu"
 title = "Receptek"
 theme = "recipes"
