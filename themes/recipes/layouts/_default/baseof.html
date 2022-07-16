@@ -2,16 +2,19 @@
 <html lang="en" class="has-navbar-fixed-top">
 {{- partial "head.html" . -}}
 
-<body>
+  <body>
     {{ if ( eq .Permalink ( add .Site.BaseURL "search/" ) ) }}
       {{- partial "searchbar.html" . -}}
     {{ else }}
       {{- partial "navbar.html" . -}}
     {{ end }}
     <main role="main">
-        {{- block "main" . }}{{- end }}
+      {{- block "main" . }}{{- end }}
     </main>
     {{- partial "footer.html" . -}}
-</body>
 
+    {{ if ( eq .Permalink ( add .Site.BaseURL "search/" ) ) }}
+      <script src="{{ .Site.BaseURL }}/js/search.js"></script>
+    {{ end }}
+  </body>
 </html>
