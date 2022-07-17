@@ -3,10 +3,14 @@ const recipeCards = document.querySelectorAll('.recipe-card');
 
 searchInput.addEventListener('input', filterList);
 
+function latinize(input = '') {
+  return input.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+}
+
 function filterList(event) {
-  const searchValue = event?.target?.value?.toLowerCase();
+  const searchValue = latinize(event?.target?.value);
   recipeCards.forEach((card) => {
-    if (!searchValue || card.innerText.toLowerCase().includes(searchValue)) {
+    if (!searchValue || latinize(card.innerText).includes(searchValue)) {
       card.style.display = ''
     } else {
       card.style.display = 'none'
