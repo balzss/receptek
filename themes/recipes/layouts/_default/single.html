@@ -9,7 +9,7 @@
       </h1>
       <div class="recipe-card-tags" style="margin-top: 1em;">
         {{ range .Params.Tags }}
-        <a class="recipe-tag" href="{{ $.Site.BaseURL }}tags/{{ . }}">{{ . }}</a>
+        <a class="recipe-tag" href="{{ $.Site.BaseURL }}/tags/{{ . }}">{{ . }}</a>
         {{ end }}
       </div>
     </header>
