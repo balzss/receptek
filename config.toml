@@ -10,4 +10,4 @@ enableGitInfo = true
   appView = false
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS"]
