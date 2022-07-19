@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" class="has-navbar-fixed-top">
-{{- partial "head.html" . -}}
-
+<html lang="hu">
+  {{- partial "head.html" . -}}
   <body>
     {{- block "main" . }}{{- end }}
-    <script>
-      if (localStorage.getItem('recipeAppView')) {
-        document.querySelectorAll('.appview-only').forEach((node) => {
-          node.classList.remove('appview-only');
-        });
-      }
-    </script>
+    {{ if .Site.Params.appView }}
+      <style>
+        .appview-only {
+          display: none;
+        }
+      </style>
+      <script src="{{ .Site.BaseURL }}/js/appView.js"></script>
+    {{ end }}
   </body>
 </html>
