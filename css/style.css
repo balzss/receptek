@@ -145,7 +145,3 @@ body {
 .recipe-button svg {
   transform: scale(0.6);
 }
-
-.appview-only {
-  display: none;
-}
