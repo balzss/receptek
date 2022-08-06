@@ -1,6 +1,6 @@
 ---
 title: "Palacsinta"
-tags: ["alaprecept", "köret"]
+tags: ["alaprecept"]
 ---
 
 ## Hozzávalók
